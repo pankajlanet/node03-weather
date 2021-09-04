@@ -113,8 +113,9 @@ app.get("/test", (req, res) => {
 //   });
 // });
 
-app.listen(port, () => {
-  console.log("Server is up on port " + port);
+ app.listen(process.env.PORT || 5000, () => {
+  const port = server.address().port;
+  console.log(`Express is working on port ${port}`);
 });
 
 
