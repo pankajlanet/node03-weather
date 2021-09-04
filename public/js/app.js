@@ -12,9 +12,9 @@ console.log('Client side javascript file is loaded!')
        
     })
 
-
+    // we will remove the local  host 
   const getDataInfo = async(city)=> {
-    const res = await fetch('http://localhost:3000/weather?address='+city)
+    const res = await fetch('/weather?address='+city)
     console.log( " response is :", res)
     const wdata = await res.json();
     //console.log('data is : ',wdata.data)
