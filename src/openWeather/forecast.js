@@ -22,7 +22,7 @@ const forecast = (lat, lon, callback) => {
       callback(null, result);
     }
   });
-};
+}; 
 
 //  forecast( 28.4667, 77.0333,(err,res)=> {
 //     console.log(res);
